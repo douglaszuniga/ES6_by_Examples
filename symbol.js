@@ -1,0 +1,2 @@
+// symbol
+// primitive type
