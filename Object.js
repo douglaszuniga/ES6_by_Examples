@@ -4,7 +4,7 @@
 Object.is(val1, val2); //similar to ===
 var obja = {};
 Object.assing(obja, { b: function() {}});
-
+//**
 // Object Destructuring
 var options = {
         repeat: true,
@@ -13,7 +13,7 @@ var options = {
     
 var { repeat, save } = options;
 var { repeat: x, save: y } = options;
-
+//**
 // Property Initializer Shorthand
 // ES5
 function createPerson(name, age) {
@@ -29,7 +29,7 @@ function createPerson(name, age) {
         age
     };
 }
-
+//**
 // Method Initializer Shorthand
 // ES5
 function createPerson(name) {
@@ -47,7 +47,7 @@ function createPerson(name) {
         },
     };
 }
-
+//**
 // Computed Property Names
 var value = 'more';
 function createPerson(name) {
@@ -60,11 +60,11 @@ function createPerson(name) {
 
 var object = createPerson('aaa');
 console.log(object['something ' + value]());
-
+//**
 // Object.setPrototypeOf()
 Object.setPrototypeOf(currentObject, newPrototype);
 currentObject.__proto__ = newPrototype;
-
+//**
 // super
 let person = {
     getGreeting() {

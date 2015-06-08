@@ -1,4 +1,5 @@
 // @dzuniga 04/25/2015
+// @dzuniga 06/07/2015
 // http://people.mozilla.org/~jorendorff/es6-draft.html
 // http://www.es6fiddle.net/
 // http://babeljs.io/repl/#?experimental=true&evaluate=true&loose=false&spec=false&code=

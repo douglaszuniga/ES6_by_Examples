@@ -22,9 +22,6 @@ let a = 1;
 console.log(typeof a); // undefined
 let a = 'a';
 // unique in scope
-let foo;
-let foo; // error
-// but
 var condition = true, a = 'a';
 if (condition) {
   var a = 'b';
@@ -62,3 +59,9 @@ funcs.forEach(function(func) {
 // const
 const a = 'somevalue';
 a = 'ss'; //error
+// complex values like object and arrays, their content can be modified
+const b = [1,2,3];
+b[1] = 0; // [1,0,3]
+// -> can no be collected by GC until its scope is done
+
+
