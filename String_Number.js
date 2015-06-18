@@ -11,7 +11,7 @@ message.startsWith('this');
 message.endsWith('ing');
 'a'.repeat(3); //aaa
 
-// Template String
+// Template String - `backtick
 var someString = `this is a '\n' string`;
 // multiline
 somethingString = `this is 

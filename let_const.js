@@ -25,8 +25,8 @@ let a = 'a';
 var condition = true, a = 'a';
 if (condition) {
   var a = 'b';
-  let a = 'aa';
-  console.log(a); // aa
+  let a = 'aa'; // <- error, already defined
+  console.log(a); 
 }
 console.log(a); // ??
 // for-loop problem
