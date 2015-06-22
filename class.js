@@ -12,8 +12,8 @@ class SuperClass {
 
 class SomeClass extends SuperClass {
 	constructor(value, otherValue) {
-    	super(value);
-    	this.otherValue = otherValue;
+    super(value);
+    this.otherValue = otherValue;
 		this.name = 'someClass';
 	}
 	speak() {
@@ -46,7 +46,7 @@ function SomeClass2(value, otherValue) {
 SomeClass2.prototype = Object.create(SuperClass2.prototype);
 SomeClass2.constructor = SomeClass2;
 SomeClass2.prototype.speak = function() {
-	return "I'm (" + this.name + " - " + this.otherValue + ") and my parent is " 
+	return "I'm (" + this.name + " - " + this.otherValue + ") and my parent is "
 	+ SuperClass2.prototype.speak.call(this);
 }
 SomeClass2.run = function() {

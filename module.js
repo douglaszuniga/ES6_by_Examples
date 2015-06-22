@@ -10,7 +10,8 @@ export function sum(a, b) {
 export function PI() {
   return Math.PI;
 };
-export arrowFunction x => x + 1;
+let arrowFunction x => x + 1;
+export arrowFunction;
 export let x = 1;
 // main.js
 // named import

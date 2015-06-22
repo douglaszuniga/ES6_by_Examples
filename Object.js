@@ -1,16 +1,24 @@
 //**
 // intro http://www.objectplayground.com/
 // Object
+// === wat!
+var x = NaN, y = 0, z = -0;
+x === x; // false
+y === z; // true
+
 Object.is(val1, val2); //similar to ===
 var obja = {};
 Object.assing(obja, { b: function() {}});
+Object.is(x, x ); // true
+Object.is(y, z ); // false
+
 //**
 // Object Destructuring
 var options = {
         repeat: true,
         save: false
     };
-    
+
 var { repeat, save } = options;
 var { repeat: x, save: y } = options;
 //**
