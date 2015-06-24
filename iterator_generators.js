@@ -16,7 +16,7 @@ interface Iterable {
 // values() - returns an iterator whose values are the values of the collection.
 // keys() - returns an iterator whose values are the keys contained in the collection.
 
-//Symbol.iterator is like a constant 
+//Symbol.iterator is like a constant
 // iteration
 let array = [1,2,3];
 for (let a of array) {
@@ -35,7 +35,7 @@ aIterator.next(); // { value: undefined, done: true}
 
 // http://www.2ality.com/2015/03/es6-generators.html
 // generators - pause - resume
-// 
+//
 function *aaa() {
 	yield 1;
 	yield 2;
@@ -56,7 +56,7 @@ arrayIterator.next();
 arrayIterator.next();
 arrayIterator.next();
 
-// 
+//
 let obj = {
 	*getIterator(items) {
 		for (let i = 0; i < items.length; i++) {
@@ -81,4 +81,29 @@ collection.items.push(3);
 
 for (let x of collection) {
     console.log(x);
+}
+
+//**
+// fibonacci on generator flavour!!
+// f(x) = f(x-1) + f(x-2)
+// 0 1 1 2 3 5 8 13 21 34 55 89 144...
+function *fibonacciSequence() {
+  let var0 = 0, var1 = 1, swap = 0;
+
+  // f(0) = 0;
+  yield var0;
+  // f(1) = 1;
+  yield var1;
+
+  while(swap < 14) {
+    swap = var0 + var1;
+    var0 = var1;
+    var1 = swap;
+    yield swap;
+  }
+}
+
+let iterator = fibonacciSequence();
+for(let i of iterator) {
+  console.log(i);
 }
