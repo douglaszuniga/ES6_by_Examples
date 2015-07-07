@@ -1,7 +1,7 @@
 // **
 // lambda - arrow
-// restrictions: 
-// 1. no new allowed, (no [[Construct]] no prototype) 
+// restrictions:
+// 1. no new allowed, (no [[Construct]] no prototype)
 // 2. 'this' can't be modified (lexical 'this')
 // 3. no arguments object (must use ES6 rest params)
 // simple
@@ -26,7 +26,7 @@ var bob = {
 // **
 // default parameters
 function someFunction(arg0 = 1, arg1 = 2) {}
-// ** 
+// **
 // rest parameters
 function someFunction(arg0, ...args) {
   args.forEach(x => console.log(x));

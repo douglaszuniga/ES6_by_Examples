@@ -15,7 +15,7 @@ export arrowFunction;
 export let x = 1;
 // main.js
 // named import
-import { sum as suma, PI, arrowFunction, x as letX} from 'lib';
+import {sum as suma, PI, arrowFunction, x as letX} from 'lib';
 // import everything from lib.js
 import * from 'lib';
 console.log(PI()); //3.14...
