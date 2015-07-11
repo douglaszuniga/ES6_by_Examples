@@ -7,11 +7,10 @@ x === x; // false
 y === z; // true
 
 Object.is(val1, val2); //similar to ===
-var obja = {};
-Object.assing(obja, { b: function() {}});
 Object.is(x, x ); // true
 Object.is(y, z ); // false
-
+var obja = {};
+Object.assing(obja, { b: function() {}});
 //**
 // Object Destructuring
 var options = {
